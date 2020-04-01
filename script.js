@@ -9,6 +9,13 @@
 
 const charAmountUser = document.getElementById("character-amount")
 
+const includeUpperCaseEl = document.getElementById("include-uppercase")
+
+const includeSymbolEl = document.getElementById ("include-symbols")
+
+const includeNumbersEl = document.getElementById ("include-numbers")
+
+const form = document.getElementById("pass-gen-form")
 
 
 
