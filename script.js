@@ -8,7 +8,6 @@
 
 
 
-// taking the character-amount element from HTML and put into a const
 const charAmountUser = document.getElementById("character-amount")
 
 const includeUpperCaseEl = document.getElementById("include-uppercase")
@@ -19,8 +18,15 @@ const includeNumbersEl = document.getElementById ("include-numbers")
 
 const passwordDisplay = document.getElementById("password-display")
 
-// taking the pass gen form from HTML and put into a const
+const main = document.getElementById("main-container")
+
 const form = document.getElementById("pass-gen-form")
+
+const btnCopy = document.getElementById("copy-pass")
+
+
+
+
 
 // having the ASCII characters arrays stored into variables, oane for each Lower/Upper case, numbers and symbols. The symbols use a concat to assemble all the symbols on the keyboard
 const LowCaseASCII = genArray(97, 122)
@@ -32,6 +38,9 @@ const SymASCII = genArray(33, 47).concat(genArray(58, 64)).concat(genArray(91, 9
 
 
 
+
+
+// the form adds in or not the required types of characters and calls the generating function 
 // prevent the form to refresh the page when button is clicked <i.e. form submitted>
 form.addEventListener ('submit', function (e) {
     e.preventDefault();
@@ -41,8 +50,13 @@ form.addEventListener ('submit', function (e) {
     const includeSymbols = includeSymbolEl.checked
     const includeNumbers = includeNumbersEl.checked
     const PASSWORD = genPass(charAmount, includeUpperCase, includeNumbers, includeSymbols)
+    // After generating password, display it in the display box
     passwordDisplay.innerText = PASSWORD
+    // createCopyButton()
 })
+
+
+
 
 
 // defining passGen function
@@ -53,7 +67,6 @@ function genPass(charAmount, includeUpperCase, includeNumbers, includeSymbols){
     if (includeUpperCase) charCodes = charCodes.concat(UppCaseASCII)
     if (includeSymbols) charCodes = charCodes.concat(SymASCII)
     if (includeNumbers) charCodes = charCodes.concat(NumASCII)
-
     const passwordChar =[]
     for (let i=0; i< charAmount; i++) {
         const characterCode = charCodes[Math.floor(Math.random()*charCodes.length)]
@@ -62,6 +75,16 @@ function genPass(charAmount, includeUpperCase, includeNumbers, includeSymbols){
     return passwordChar.join('')
 }
 
+btnCopy.addEventListener("click", function(e){
+    // event.stopPropagation();    
+    const copyPass = document.querySelector("#password-display");
+    console.log(copyPass)
+    copyPass.select();
+    console.log(copyPass)
+    document.execCommand("copy");
+    alert("Copied to clipboard");
+    console.log(copyPass);
+})
 
 
 
@@ -83,10 +106,60 @@ function genArray(low, high){
 function charAmountFunc(event){
     const val = event.target.value
     charAmount.value = val
+    charAmount.addEventListener("input", charAmountFunc);
 }
 
-charAmount.addEventListener("input", charAmountFunc);
 
+
+
+
+// defining the Copy Pass function
+// function copyPass(){
+//     document.getElementById("password-display").select();
+//     document.execCommand("Copy");
+//     alert("Password copied to clipboard");
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------
+// Creating the Copy Button function in JS
+// ---------------------------------------
+
+// function createCopyButton(){
+//     const btnCopy = document.createElement("button");
+//     btnCopy.setAttribute("class", "copy-button");
+//     btnCopy.textContent = "Copy Password";
+//     form.appendChild(btnCopy);
+// }
+
+
+
+
+
+
+// defining Copy Pass function
 
 
 

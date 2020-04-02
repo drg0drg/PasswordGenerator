@@ -8,10 +8,11 @@
 
 </head>
 <body>
-    <div class="container-dsk container-md container-sm">
+    <main id="main-container"class="container-dsk container-md container-sm">
         <h1 class="PG-title-dsk PG-title-md PG-title-sm">PASSWORD GENERATOR</h1>
-        <h3 id="password-display" class= "password-display-dsk password-display-md password-display-sm">password</h3>
+        <!-- <h3 id="password-display" class= "password-display-dsk password-display-md password-display-sm">password</h3> -->
         <form id= "pass-gen-form" class="pass-gen-form-dsk pass-gen-form-md pass-gen-form-sm">
+            <textarea id="password-display" class= "password-display-dsk password-display-md password-display-sm">password</textarea>
             <label  for="character-amount" class="label-dsk label-md label-sm">Number Of Characters</label>
                 <div class= "char-amount-container">
                     <input type="number" min="8" max="128" id="character-amount">
@@ -26,14 +27,13 @@
             <label for="include-symbols" class="label-dsk label-md label-sm">Include Symbols</label>
             <input type ="checkbox" id="include-symbols">
 
-            <button type="submit" class="btn-Submit-dsk btn-Submit-ms btn-Submit-sm">Generate Password</button>
-
-
+            <button type="submit" class="btn-Submit-dsk btn-Submit-md btn-Submit-sm">Generate Password</button>
         </form>
-    </div>
+        <button id="copy-pass" class="btn-Copy-dsk btn-Copy-md btn-Copy-sm">Copy Password</button>
+    </main>
     
 
-
+<!-- onclick="copyPass()"  -->
 
     <script src="script.js"></script>
 
