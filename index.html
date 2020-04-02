@@ -9,11 +9,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Password Generator</h1>
+        <h1 class="PS-title">Password Generator</h1>
         <h3 id="password-display">password</h3>
         <form id= "pass-gen-form">
             <label  for="character-amount">Number Of Characters</label>
-            <input type="number" min="8" max="128" id="character-amount">;
+                <div class= "char-amount-container">
+                    <input type="number" min="8" max="128" id="character-amount">
+                </div>
 
             <label for="include-uppercase">Include Uppercase</label>
             <input type ="checkbox" id="include-uppercase">
@@ -22,9 +24,9 @@
             <input type ="checkbox" id="include-numbers">
 
             <label for="include-symbols">Include Symbols</label>
-            <input type ="checkbox" id="include-symbols">;
+            <input type ="checkbox" id="include-symbols">
 
-            <button type="submit">Generate Password</button>
+            <button type="submit" class="btn-Submit">Generate Password</button>
 
 
         </form>

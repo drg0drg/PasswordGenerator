@@ -1,5 +1,10 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 body {
-    background-color: white;
+    background-color: rgb(134, 134, 134);
     margin:0;
     padding:0;
     min-height: 100vh;
@@ -9,7 +14,62 @@ body {
 }
 
 .container{
+    background-color: rgb(204, 236, 219);
+    border: 2px solid black;
+    padding: 3rem;
+    width:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display:grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.PS-title {
+    margin:0;
+    text-align: center;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+/* .char-amount-container {
+    width: 0.5rem;
+} */
+
+#password-display {
     background-color: white;
-    border: 5px solid black;
-    width:90%;
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    height: 5rem;
+    width: 350px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.btn-Submit {
+    grid-column: span 2;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 1000;
+    background-color: transparent;
+}
+
+.btn-Submit:hover {
+    background-color: #1e9e1333;
 }
