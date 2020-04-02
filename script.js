@@ -1,10 +1,24 @@
 // PseudoCoding
 
-// Create ASCII based sets of characters for each of the <lowerCase>, <UpperCase>, <Numbers> and <Symbols> 
+// Create ASCII-based sets of characters for each of the <lowerCase>, <UpperCase>, <Numbers> and <Symbols> 
 
 // Each set of characters is stored in a variable.
 
-// The function that creates the password should concatenate the sets depending on the user input and randomly sweep through and pick a specific number of characters that builds the password.
+// Create a function that builds an ASCII Array (genArray)
+
+// Create a function to generate the password  (passGen)
+
+        // The function takes in user input - what type of char should be added and the number of password characters
+        // The function should randomly shuffle through the character and add them to the final password
+
+// The genPass function should be called in an event listener (when the gen password button is pressed)
+
+// Display the password in the text area
+
+// The password is copied when the copy button is pressed by using an event listener
+
+// A message that the password has been copied to clipboard shoud be used
+
 
 
 
@@ -52,7 +66,6 @@ form.addEventListener ('submit', function (e) {
     const PASSWORD = genPass(charAmount, includeUpperCase, includeNumbers, includeSymbols)
     // After generating password, display it in the display box
     passwordDisplay.innerText = PASSWORD
-    // createCopyButton()
 })
 
 
@@ -75,6 +88,10 @@ function genPass(charAmount, includeUpperCase, includeNumbers, includeSymbols){
     return passwordChar.join('')
 }
 
+
+
+// defining copy button action
+
 btnCopy.addEventListener("click", function(e){
     // event.stopPropagation();    
     const copyPass = document.querySelector("#password-display");
@@ -85,6 +102,9 @@ btnCopy.addEventListener("click", function(e){
     alert("Copied to clipboard");
     console.log(copyPass);
 })
+
+
+
 
 
 

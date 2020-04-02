@@ -1,3 +1,4 @@
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,67 +26,112 @@ body {
 @media screen and (max-width: 768px) {
 
 
-    .container-sm{
-        background-color: rgb(204, 236, 219);
-        border: 2px solid black;
-        padding: 3rem;
-        width:60%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+.container-sm{
+    background-image: url(assets/images/Desktop2.jpg);
+    background-color: rgb(204, 236, 219);
+    border: 2px solid black;
+    padding: 3rem;
+    width:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+
+
     
-    .pass-gen-form-sm {
-        display:grid;
-        grid-template-columns: auto auto;
-        row-gap: 1rem;
-        column-gap: 5rem;
-        justify-content: center;
-        align-items: center;
-    }
+.pass-gen-form-sm {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+
+
     
-    .PG-title-sm {
-        margin:0;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 900;
-    }
+.PG-title-sm {
+    margin:0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+
+
+
+.section-md {
+    display:grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+
+
+
     
-    .label-sm {
-        font-size: 12px;
-        font-weight: 800;
-        text-align: center;
-    }
+.label-sm {
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+}
     
+
+
+
+
     
-    .password-display-sm {
-        background-color: white;
-        color: black;
-        padding: 1rem;
-        border: 1px solid black;
-        height: 5rem;
-        width: 90%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        word-break: break-all;
-    }
+.password-display-sm {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    height: 5rem;
+    width: 83%;
+    word-break: break-all;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
     
-    .btn-Submit-sm {
-        grid-column: span 2;
-        border: 2px solid black;
-        padding: 0.5rem 1rem;
-        font-weight: bold;
-        cursor: pointer;
-        font-weight: 1000;
-        background-color: transparent;
-    }
+.btn-Submit-sm,
+.btn-Copy-sm {
+    width: 100%;
+    height: 5rem;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 1000;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
     
-    .btn-Submit-sm:hover {
-        background-color: #1e9e1333;
-    }
-    } 
+
+
+
+.btn-Submit-sm:hover, 
+.btn-Copy-sm:hover {
+    background-color: #1e9e1333;
+}
+
+} 
     
 
 
@@ -104,6 +150,7 @@ body {
 
 
 .container-md{
+    background-image: url(assets/images/Desktop2.jpg);
     background-color: rgb(204, 236, 219);
     border: 2px solid black;
     padding: 3rem;
@@ -112,56 +159,97 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    object-fit: cover;
 }
 
+
+
+
 .pass-gen-form-md {
-    display:grid;
-    grid-template-columns: auto auto;
-    row-gap: 1rem;
-    column-gap: 5rem;
+    display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
+
+
+
+
 
 .PG-title-md {
     margin:0;
     text-align: center;
     font-size: 50px;
     font-weight: 900;
+    margin-bottom: 30px;
 }
+
+
+
+
+.section-md {
+    display:grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 5rem; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
 
 .label-md {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
-
 }
 
 
-.password-display-dsk {
+
+
+
+.password-display-md {
+    grid-column: span 2;
     background-color: white;
     color: black;
     padding: 1rem;
     border: 1px solid black;
     height: 5rem;
-    width: 350px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    width: 93%;
     word-break: break-all;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.btn-Submit-dsk {
-    grid-column: span 2;
+
+
+
+
+.btn-Submit-md,
+.btn-Copy-md {
+    width: 100%;
+    height: 5rem;
     border: 2px solid black;
     padding: 0.5rem 1rem;
-    font-weight: bold;
     cursor: pointer;
+    font-size: 25px;
     font-weight: 1000;
     background-color: transparent;
+    margin-bottom: 15px;
 }
 
-.btn-Submit-md:hover {
+
+
+.btn-Submit-md:hover,
+.btn-Copy-md:hover {
     background-color: #1e9e1333;
 }
 } 
@@ -182,65 +270,105 @@ body {
 @media screen and (min-width: 992px) {
 
 
-    .container-dsk{
-        background-color: rgb(204, 236, 219);
-        border: 2px solid black;
-        padding: 3rem;
-        width:60%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .pass-gen-form-dsk {
-        display:grid;
-        grid-template-columns: auto auto;
-        row-gap: 1rem;
-        column-gap: 5rem;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .PG-title-dsk {
-        margin:0;
-        text-align: center;
-        font-size: 50px;
-        font-weight: 900;
-    }
-    
-    .label-dsk {
-        font-size: 20px;
-        font-weight: 800;
-        text-align: center;
+.container-dsk{
+    background-image: url(assets/images/Desktop2.jpg);
+    background-color: rgb(204, 236, 219);
+    border: 2px solid black;
+    padding: 3rem;
+    width:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
 
-    }
+}
+
+
     
+.pass-gen-form-dsk {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 650px;
+}
+
+
+
     
-    .password-display-dsk {
-        background-color: white;
-        color: black;
-        padding: 1rem;
-        border: 1px solid black;
-        height: 5rem;
-        width: 350px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        word-break: break-all;
-    }
+.PG-title-dsk {
+    margin:0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+
+
+
+.section-dsk {
+    display:grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 5rem; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
     
-    .btn-Submit-dsk {
-        grid-column: span 2;
-        border: 2px solid black;
-        padding: 0.5rem 1rem;
-        font-weight: bold;
-        cursor: pointer;
-        font-weight: 1000;
-        background-color: transparent;
-    }
+
     
-    .btn-Submit-dsk:hover {
-        background-color: #1e9e1333;
-    }
-    }
+
+
+
+.label-dsk {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+    
+
+
+
+.password-display-dsk {
+    grid-column: span 2;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    height: 5rem;
+    width: 95%;
+    word-break: break-all;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+.btn-Submit-dsk,
+.btn-Copy-dsk {
+    width: 100%;
+    height: 5rem;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 1000;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+
+
+    
+.btn-Submit-dsk:hover, 
+.btn-Copy-dsk:hover {
+    background-color: #1e9e1333;
+}
+
+
+}
