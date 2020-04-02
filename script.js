@@ -17,6 +17,14 @@ const includeNumbersEl = document.getElementById ("include-numbers")
 
 const form = document.getElementById("pass-gen-form")
 
+// having the ASCII characters arrays stored into variables, oane for each Lower/Upper case, numbers and symbols. The symbols use a concat to assemble all the symbols on the keyboard
+const LowCaseASCII = genArray(97, 122)
+const UppCaseASCII = genArray(65, 90)
+const NumASCII = genArray(48, 57)
+const SymASCII = genArray(33, 47).concat(genArray(58, 64)).concat(genArray(91, 96)).concat(genArray(123, 126))
+
+
+
 
 
 // taking the input of how many characters the pass should contain and put the input in charAmount
@@ -26,8 +34,6 @@ function charAmountFunc(event){
 }
 
 charAmount.addEventListener("input", charAmountFunc);
-
-
 
 
 
@@ -45,12 +51,7 @@ function genArray(low, high){
 
 
 
-// having the ASCII characters arrays stored into variables, oane for each Lower/Upper case, numbers and symbols. The symbols use a concat to assemble all the symbols on the keyboard
-const LowCaseASCII = genArray(97, 122)
-const UppCaseASCII = genArray(65, 90)
-const NumASCII = genArray(48, 57)
-const SymASCII = genArray(33, 47).concat(genArray(58, 64)).concat(genArray(91, 96)).concat(genArray(123, 126))
-
+// defining passGen function
 
 function genPass(charAmount, LowCaseASCII){
     const charCodes = LowCaseASCII
@@ -61,6 +62,8 @@ function genPass(charAmount, LowCaseASCII){
     }
     return passowrdChar.join('')
 }
+
+
 
 
 
