@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+    <title>PASSWORD GENERATOR</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div class="container">
-        <h1 class="PS-title">Password Generator</h1>
-        <h3 id="password-display">password</h3>
-        <form id= "pass-gen-form">
-            <label  for="character-amount">Number Of Characters</label>
+    <div class="container-dsk container-md container-sm">
+        <h1 class="PG-title-dsk PG-title-md PG-title-sm">PASSWORD GENERATOR</h1>
+        <h3 id="password-display" class= "password-display-dsk password-display-md password-display-sm">password</h3>
+        <form id= "pass-gen-form" class="pass-gen-form-dsk pass-gen-form-md pass-gen-form-sm">
+            <label  for="character-amount" class="label-dsk label-md label-sm">Number Of Characters</label>
                 <div class= "char-amount-container">
                     <input type="number" min="8" max="128" id="character-amount">
                 </div>
 
-            <label for="include-uppercase">Include Uppercase</label>
+            <label for="include-uppercase" class="label-dsk label-md label-sm">Include Uppercase</label>
             <input type ="checkbox" id="include-uppercase">
 
-            <label for="include-numbers">Include Numbers</label>
+            <label for="include-numbers" class="label-dsk label-md label-sm">Include Numbers</label>
             <input type ="checkbox" id="include-numbers">
 
-            <label for="include-symbols">Include Symbols</label>
+            <label for="include-symbols" class="label-dsk label-md label-sm">Include Symbols</label>
             <input type ="checkbox" id="include-symbols">
 
-            <button type="submit" class="btn-Submit">Generate Password</button>
+            <button type="submit" class="btn-Submit-dsk btn-Submit-ms btn-Submit-sm">Generate Password</button>
 
 
         </form>
