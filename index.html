@@ -8,32 +8,32 @@
 
 </head>
 <body>
-    <main id="main-container"class="container-dsk container-md container-sm">
+    <main id="main-container" class="container-dsk container-md container-sm">
         <h1 class="PG-title-dsk PG-title-md PG-title-sm">PASSWORD GENERATOR</h1>
-        <div class="content-dsk content-md content-sm">
-            <form id= "pass-gen-form" class="pass-gen-form-dsk pass-gen-form-md pass-gen-form-sm">
-                <textarea id="password-display" class= "password-display-dsk password-display-md password-display-sm">password</textarea>
-                <section class="section-dsk section-md section-sm">
-                    <label  for="character-amount" class="label-dsk label-md label-sm">Number Of Characters</label>
-                    <div class= "char-amount-container">
-                        <input type="number" min="8" max="128" id="character-amount">
+            <div class="content-dsk content-md content-sm">
+                <form id= "pass-gen-form" class="pass-gen-form-dsk pass-gen-form-md pass-gen-form-sm">
+                    <textarea id="password-display" class= "password-display-dsk password-display-md password-display-sm">Your Secure Password</textarea>
+                    <div class="section-dsk section-md section-sm">
+                        <label  for="character-amount" class="label-dsk label-md label-sm">Number Of Characters</label>
+                            <div class= "char-amount-container">
+                                <input type="number" min="8" max="128" id="character-amount">
+                            </div>
+
+                        <label for="include-uppercase" class="label-dsk label-md label-sm">Include Uppercase</label>
+                        <input type ="checkbox" id="include-uppercase">
+
+                        <label for="include-numbers" class="label-dsk label-md label-sm">Include Numbers</label>
+                        <input type ="checkbox" id="include-numbers">
+
+                        <label for="include-symbols" class="label-dsk label-md label-sm">Include Symbols</label>
+                        <input type ="checkbox" id="include-symbols">
+
                     </div>
 
-                    <label for="include-uppercase" class="label-dsk label-md label-sm">Include Uppercase</label>
-                    <input type ="checkbox" id="include-uppercase">
-
-                    <label for="include-numbers" class="label-dsk label-md label-sm">Include Numbers</label>
-                    <input type ="checkbox" id="include-numbers">
-
-                    <label for="include-symbols" class="label-dsk label-md label-sm">Include Symbols</label>
-                    <input type ="checkbox" id="include-symbols">
-
-                </section>
-
-                <button type="submit" class="btn-Submit-dsk btn-Submit-md btn-Submit-sm">Generate Password</button>
-            </form>
-            <button id="copy-pass" class="btn-Copy-dsk btn-Copy-md btn-Copy-sm">Copy Password</button>
-        </div>
+                    <button type="submit" class="btn-Submit-dsk btn-Submit-md btn-Submit-sm">Generate Password</button>
+                </form>
+                <button id="copy-pass" class="btn-Copy-dsk btn-Copy-md btn-Copy-sm">Copy Password</button>
+            </div>
     </main>
     
 

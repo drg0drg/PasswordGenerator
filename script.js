@@ -17,7 +17,7 @@
 
 // The password is copied when the copy button is pressed by using an event listener
 
-// A message that the password has been copied to clipboard shoud be used
+// A message that the password has been copied to clipboard shoud inform the user
 
 
 
@@ -128,59 +128,3 @@ function charAmountFunc(event){
     charAmount.value = val
     charAmount.addEventListener("input", charAmountFunc);
 }
-
-
-
-
-
-// defining the Copy Pass function
-// function copyPass(){
-//     document.getElementById("password-display").select();
-//     document.execCommand("Copy");
-//     alert("Password copied to clipboard");
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ---------------------------------------
-// Creating the Copy Button function in JS
-// ---------------------------------------
-
-// function createCopyButton(){
-//     const btnCopy = document.createElement("button");
-//     btnCopy.setAttribute("class", "copy-button");
-//     btnCopy.textContent = "Copy Password";
-//     form.appendChild(btnCopy);
-// }
-
-
-
-
-
-
-// defining Copy Pass function
-
-
-
-

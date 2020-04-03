@@ -32,6 +32,7 @@ body {
     border: 2px solid black;
     padding: 3rem;
     width:60%;
+    height:80vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -58,24 +59,25 @@ body {
 .PG-title-sm {
     margin:0;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 900;
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
 }
 
 
 
 
-.section-md {
+.section-sm {
     display:grid;
     grid-template-columns: auto auto;
-    row-gap: 1rem;
+    row-gap: 0.2rem;
     column-gap: 3rem; 
     justify-content: center;
     align-items: center;
     margin: 0;
     width: 100%;
-    margin-bottom: 40px;
+    /* margin-bottom: 10px; */
+    margin-bottom: 0.8rem;
 }
 
 
@@ -155,6 +157,7 @@ body {
     border: 2px solid black;
     padding: 3rem;
     width:60%;
+    height:80vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +183,7 @@ body {
 .PG-title-md {
     margin:0;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
     margin-bottom: 30px;
 }
@@ -270,18 +273,18 @@ body {
 @media screen and (min-width: 992px) {
 
 
-.container-dsk{
+.container-dsk {
     background-image: url(assets/images/Desktop2.jpg);
     background-color: rgb(204, 236, 219);
     border: 2px solid black;
     padding: 3rem;
     width:60%;
+    height:80vh;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     object-fit: cover;
-
 }
 
 
@@ -300,7 +303,7 @@ body {
 .PG-title-dsk {
     margin:0;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
     margin-bottom: 30px;
 }
@@ -359,7 +362,7 @@ body {
     font-size: 25px;
     font-weight: 1000;
     background-color: transparent;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 
